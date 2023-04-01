@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap");
 
 * {
   margin: 0;
@@ -33,7 +34,20 @@ body {
   margin-bottom: 20px;
 }
 
-.click-btn {
+.dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.dice img {
+  width: 80px;
+  height: 80px;
+}
+
+.roll-btn {
   font-size: 24px;
   padding: 10px 20px;
   cursor: pointer;
@@ -43,18 +57,29 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.2s;
+  margin-bottom: 20px;
 }
 
-.click-btn:hover {
+.roll-btn:hover {
   background-color: #283593;
 }
 
-.game-info {
-  font-size: 18px;
-  color: #333;
-  margin-top: 20px;
+.results {
+  height: 200px;
+  overflow-y: auto;
+  border: 1px solid #f0f0f0;
+  padding: 10px;
 }
 
-.clicks {
+.results-title {
   font-weight: 500;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.results-list {
+  list-style: none;
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
 }
